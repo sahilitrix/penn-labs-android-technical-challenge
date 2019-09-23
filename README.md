@@ -46,8 +46,9 @@ The package is organized into the following folders:
 - Hitting the Enter key on the keyboard or hitting the Submit button will initiate the API call and navigate the user to BuildingDetailActivity with the resultant building
 
 Test cases that work:
---> Search of “vet” returns the “Vet School Hill” building. The address, floors, and year built data is empty in this case, so it is not shown. The map with a marker at the coordinates is shown. 
---> Search of “dining hall” returns Hill College House. The address, floors, and year built is shown in the detail activity. The map with a marker at the coordinates is shown. 
+
+    - Search of “vet” returns the “Vet School Hill” building. The address, floors, and year built data is empty in this              case, so it is not shown. The map with a marker at the coordinates is shown. 
+    - Search of “dining hall” returns Hill College House. The address, floors, and year built is shown in the detail                activity. The map with a marker at the coordinates is shown. 
 
 <b> 5. BuildingDetailActivity </b>
 
