@@ -19,6 +19,10 @@ The package is organized into the following folders:
 - objects
     - Building 
     - Restaurant 
+    
+<h1>Setup</h1>
+
+Make sure to allow all the neccessary permissions or the app will crash on certain functionality! This demo does not handle user events where permission is denied.
 
 <h1>Features</h1>
 
