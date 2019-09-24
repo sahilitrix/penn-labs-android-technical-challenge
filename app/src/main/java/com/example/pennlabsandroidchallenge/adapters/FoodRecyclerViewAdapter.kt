@@ -27,7 +27,7 @@ class FoodRecyclerViewAdapter(restaurantList: ArrayList<Restaurant>) : RecyclerV
         }
     }
 
-    fun listByRating(restaurants : ArrayList<Restaurant>) : ArrayList<Restaurant> {
+    private fun listByRating(restaurants : ArrayList<Restaurant>) : ArrayList<Restaurant> {
         var list = ArrayList<Restaurant>()
         list.addAll(restaurants)
         list.sortWith(compareBy({ it.rating }))
@@ -35,14 +35,14 @@ class FoodRecyclerViewAdapter(restaurantList: ArrayList<Restaurant>) : RecyclerV
         return list
     }
 
-    fun listByDistance(restaurants : ArrayList<Restaurant>, currentCoordinates: Pair<Double, Double>) : ArrayList<Restaurant> {
+    private fun listByDistance(restaurants : ArrayList<Restaurant>, currentCoordinates: Pair<Double, Double>) : ArrayList<Restaurant> {
         var list = ArrayList<Restaurant>()
         list.addAll(restaurants)
         list.sortWith(compareBy({ distance(it.coordinates, currentCoordinates) }))
         return list
     }
 
-    fun distance (rCoordinates : Pair<Double, Double>, mCoordinates: Pair<Double, Double>) : Double {
+    private fun distance (rCoordinates : Pair<Double, Double>, mCoordinates: Pair<Double, Double>) : Double {
         val x1 = rCoordinates.first
         val y1 = rCoordinates.second
         val x2 = mCoordinates.first

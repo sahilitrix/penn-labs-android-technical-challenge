@@ -25,8 +25,7 @@ import android.view.KeyEvent
  */
 class OCRFragment : Fragment() {
 
-    val BUIDLING_API_ENDPOINT = "https://api.pennlabs.org/buildings/search?q=hill"
-
+    private val BUIDLING_API_ENDPOINT = "https://api.pennlabs.org/buildings/search?q=hill"
     //using Square Up's OkHttp client to make api call
     private val httpclient = OkHttpClient()
 

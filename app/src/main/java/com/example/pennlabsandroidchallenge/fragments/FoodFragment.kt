@@ -26,16 +26,15 @@ import kotlinx.android.synthetic.main.fragment_food.*
 class FoodFragment : Fragment() {
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    var myLatitude : Double? = null
-    var myLongitude : Double? = null
+    private var myLatitude : Double? = null
+    private var myLongitude : Double? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_food, container, false)
-        return view
+        return inflater.inflate(R.layout.fragment_food, container, false)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
